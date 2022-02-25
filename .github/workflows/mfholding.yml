@@ -1,8 +1,8 @@
-name: scrape
+name: run
 on:
   push:
     branches:
-    - main
+    - master
   schedule:
     - cron: '15 11 28 * *' # Every Day at 4PM NST (10:15am UTC)
     
