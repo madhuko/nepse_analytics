@@ -1,17 +1,11 @@
-# This is a basic workflow to help you get started with Actions
-          
-  name: run
-# on:
-#   push:
-#     branches:
-#       - master
-
+name: scrape
 on:
   push:
     branches:
     - main
   schedule:
-    - cron: '15 10 28 * *' 
+    - cron: '15 05 28 * *' # Every Day at 4PM NST (10:15am UTC)
+    
 jobs:
   # This workflow contains a single job called "build"
   build:
@@ -37,6 +31,7 @@ jobs:
           
       - name: Commit and Push Files
         run: |
+           git config --local user.email "madhuko@outlook.com"
            git config --local user.name "madhuko"        
            git add .
            git commit -m "Operation Completed successfully" -a
