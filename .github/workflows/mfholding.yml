@@ -4,7 +4,7 @@ on:
     branches:
     - main
   schedule:
-    - cron: '15 05 28 * *' # Every Day at 4PM NST (10:15am UTC)
+    - cron: '15 11 28 * *' # Every Day at 4PM NST (10:15am UTC)
     
 jobs:
   # This workflow contains a single job called "build"
