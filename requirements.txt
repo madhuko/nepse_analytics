@@ -1,4 +1,4 @@
 pandas
 requests
-BeautifulSoup
+BeautifulSoup4
 json
