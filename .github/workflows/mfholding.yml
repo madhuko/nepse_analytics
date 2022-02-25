@@ -35,4 +35,4 @@ jobs:
            git config --local user.name "madhuko"        
            git add .
            git commit -m "Operation Completed successfully" -a
-           git push origin main
+           git push origin master
