@@ -1,8 +1,8 @@
 name: run
 on:
-#   push:
-#     branches:
-#     - master
+  push:
+    branches:
+    - master
   schedule:
     - cron: '15 11 28 * *' # Every Day at 4PM NST (10:15am UTC)
     
@@ -20,7 +20,7 @@ jobs:
       - name: Setup Python Environment
         uses: actions/setup-python@v2
         with:
-          python-version: 3.9
+          python-version: 3.11
 
       - name: Install Dependencies
         run: |
